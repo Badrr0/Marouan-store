@@ -1,0 +1,428 @@
+html,boy {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    width: 100%;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+
+    font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 590px;
+    gap: 2rem;
+    width: auto;
+}
+.nav-links li a {
+    color: rgb(0, 0, 0);
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-links li a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #ffffff;
+}
+/*logo store*/
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* TEXT LOGO */
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+}
+/* WATCH ICON */
+nav i {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    margin-top: 2px;
+    transition: 0.3s;
+}
+/*end */
+
+#myvidio {
+    position: fixed; /* fixed instead of relative to prevent it adding height */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* keeps video proportions */
+    z-index: -1;
+}
+.textlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    margin-top: 200px;
+}
+.textlogo h2 {
+    font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+}
+.textlogo h3 {
+    font-family: "Vend Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+.textlogo h2:hover {
+     color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #000000;
+}
+.textlogo h3:hover {
+     color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #ffffff;
+}
+/*3d */
+.parfum3d img {
+    display: flex;
+    height: 350px;
+    object-fit: cover;
+    position: absolute;
+    top: 100px;
+    left: 950px;
+}
+/*end*/
+
+/*buttons */
+.girlsboys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+/*end*/
+/*girls buttons*/
+/* From Uiverse.io by zjssun */ 
+.button {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #ff00aa;
+  transition: all 0.2s ease;
+}
+
+.button:active {
+  transform: scale(0.96);
+}
+
+.button:before,
+.button:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.button:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.button:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+/*endd*/
+
+/*buttons boys */
+/* From Uiverse.io by zjssun */ 
+.Boys {
+  position: relative;
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #0026ff;
+  transition: all 0.2s ease;
+
+}
+
+.Boys:active {
+  transform: scale(0.96);
+}
+
+.Boys:before,
+.Boys:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.Boys:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.Boys:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+/*end*/
+
+
+
+/*media queries */
+/* =========================
+   RESPONSIVE – TABLETS
+========================= */
+@media (max-width: 1024px) {
+
+  /* text center spacing */
+  .textlogo {
+    margin-top: 160px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textlogo h2 {
+    font-size: 48px;
+  }
+
+  .textlogo h3 {
+    font-size: 18px;
+    margin-top: 80px;
+    margin-right: 0;
+  }
+
+  /* 3D image reposition */
+  .parfum3d img {
+    height: 280px;
+    top: 180px;
+    left: 65%;
+    transform: translateX(-50%);
+  }
+
+  /* buttons spacing */
+  .girlsboys {
+    margin-top: 60px;
+  }
+}
+
+/* =========================
+   RESPONSIVE – PHONES
+========================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR NOT TOUCHED */
+  /* only allow it to fit screen */
+  .nav-links {
+    margin-right: 20px;
+    gap: 1.5rem;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  nav i {
+    font-size: 22px;
+  }
+
+  /* text */
+  .textlogo {
+    margin-top: 140px;
+  }
+
+  .textlogo h2 {
+    font-size: 36px;
+  }
+
+  .textlogo h3 {
+    font-size: 16px;
+    margin-top: 65px;
+  }
+
+  /* hide 3D image on small screens */
+  .parfum3d img {
+    display: none;
+  }
+
+  /* buttons stack */
+  .girlsboys {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+  }
+}
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+@media (max-width: 480px) {
+
+  .textlogo h2 {
+    font-size: 28px;
+  }
+
+  .textlogo h3 {
+    font-size: 14px;
+    margin-top: 55px;
+  }
+
+  .button,
+  .Boys {
+    width: 220px;
+    text-align: center;
+  }
+}

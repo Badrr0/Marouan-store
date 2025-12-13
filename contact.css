@@ -1,0 +1,251 @@
+html,boy {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    width: 100%;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+
+    font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-right: 590px;
+    gap: 2rem;
+    width: auto;
+}
+.nav-links li a {
+    color: rgb(0, 0, 0);
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.nav-links li a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #ffffff;
+}
+/*logo store*/
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* TEXT LOGO */
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+}
+/* WATCH ICON */
+nav i {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    margin-top: 2px;
+    transition: 0.3s;
+}
+/*end */
+
+#myvidio {
+    position: fixed; /* fixed instead of relative to prevent it adding height */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* keeps video proportions */
+    z-index: -1;
+}
+.textlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: fit-content;
+    margin-top: 200px;
+}
+.textlogo h2 {
+    font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  margin-bottom: 80px;
+}
+.textlogo h3 {
+    font-family: "Vend Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 100px;
+    margin-right: 20px;
+}
+.textlogo h2:hover {
+     color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #000000;
+}
+.textlogo h3:hover {
+     color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px #ffffff;
+}
+.textlogo h4 {
+    font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 160px;
+    margin-right: 20px;
+}
+.socialmedia  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+.socialmedia a {
+    color: black;
+    text-decoration: none;
+}
+.socialmedia i {
+     transition: 0.3s ease;
+    cursor: pointer;
+}
+.socialmedia i:hover {
+     transform: scale(1.2);
+}
+/* media queries */
+/* =========================
+   TABLETS (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+
+  .nav-links {
+    margin-right: 200px; /* keep navbar same style */
+  }
+
+  .textlogo {
+    margin-top: 170px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textlogo h2 {
+    font-size: 48px;
+    margin-bottom: 60px;
+  }
+
+  .textlogo h3 {
+    font-size: 18px;
+    margin-top: 80px;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .textlogo h4 {
+    font-size: 18px;
+    margin-top: 140px;
+    margin-right: 0;
+    max-width: 700px;
+    text-align: center;
+  }
+
+  .socialmedia {
+    margin-top: 80px;
+    gap: 40px;
+  }
+}
+
+/* =========================
+   PHONES (≤768px)
+========================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR STRUCTURE UNCHANGED */
+  .nav-links {
+    margin-right: 20px;
+    gap: 1.2rem;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  nav i {
+    font-size: 22px;
+  }
+
+  .textlogo {
+    margin-top: 140px;
+    padding: 0 20px;
+  }
+
+  .textlogo h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  .textlogo h3 {
+    font-size: 16px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+
+  .textlogo h4 {
+    font-size: 16px;
+    margin-top: 130px;
+  }
+
+  .socialmedia {
+    font-size: 48px;
+    margin-top: 70px;
+  }
+}
+
+/* =========================
+   SMALL PHONES (≤480px)
+========================= */
+@media (max-width: 480px) {
+
+  .textlogo h2 {
+    font-size: 28px;
+  }
+
+  .textlogo h3 {
+    font-size: 14px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .textlogo h4 {
+    font-size: 14px;
+    margin-top: 115px;
+  }
+
+  .socialmedia {
+    font-size: 40px;
+    gap: 30px;
+  }
+}
