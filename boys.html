@@ -179,8 +179,7 @@ function sendToInsta(productName, imagePath, size, price) {
   const message = `Salam, Bghit had parfum:
 💎 Product: ${productName}
 📏 Size: ${size}
-💰 Price: ${price} MAD
-🖼 Image: ${location.origin}/${imagePath}`;
+💰 Price: ${price} MAD`;
 
   navigator.clipboard.writeText(message).then(() => {
     alert("📋 Message copied. Opening Instagram DM...");
@@ -192,3 +191,4 @@ function sendToInsta(productName, imagePath, size, price) {
 </html>
 
     
+
