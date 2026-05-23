@@ -322,161 +322,112 @@ nav i {
   }
 }
 /*end*/
+/* media Q*/
 
 
+/*media queries */
 
+/* =========================
+   RESPONSIVE – TABLETS
+========================= */
 @media (max-width: 1024px) {
 
+  /* text center spacing */
   .textlogo {
-    margin-top: 140px;
-    text-align: center;
+    margin-top: 160px;
     flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
+    text-align: center;
   }
 
   .textlogo h2 {
-    font-size: 42px;
-    line-height: 1.2;
+    font-size: 48px;
   }
 
   .textlogo h3 {
-    font-size: 16px;
-    margin-top: 12px;
+    font-size: 18px;
+    margin-top: 80px;
+    margin-right: 0;
   }
 
+  /* 3D image reposition */
   .parfum3d img {
-    height: 260px;
+    height: 280px;
     top: 180px;
-    left: 60%;
+    left: 65%;
     transform: translateX(-50%);
   }
 
+  /* buttons spacing */
   .girlsboys {
     margin-top: 60px;
   }
 }
 
-
 /* =========================
-   PHONES
+   RESPONSIVE – PHONES
 ========================= */
 @media (max-width: 768px) {
 
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 16px;
+  /* NAVBAR NOT TOUCHED */
+  /* only allow it to fit screen */
+  .nav-links {
+    margin-right: 20px;
+    gap: 1.5rem;
   }
 
   .logo {
     font-size: 18px;
-  }
-
-  .nav-links {
-    gap: 0.8rem;
-    flex-wrap: nowrap;
-  }
-
-  .nav-links li a {
-    font-size: 14px;
   }
 
   nav i {
     font-size: 22px;
   }
 
-  /* HERO */
+  /* text */
   .textlogo {
-    margin-top: 50px;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
+    margin-top: 140px;
   }
 
   .textlogo h2 {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .textlogo h3 {
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 16px;
+    margin-top: 65px;
   }
 
-  /* hide image */
+  /* hide 3D image on small screens */
   .parfum3d img {
     display: none;
   }
 
-  /* buttons */
+  /* buttons stack */
   .girlsboys {
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    margin-top: 35px;
-  }
-
-  .button,
-  .Boys {
-    width: 92%;
-    max-width: 420px;
-    height: 56px;
-    font-size: 20px;
-    font-weight: 700;
-    border-radius: 12px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    letter-spacing: 0.5px;
+    gap: 15px;
+    margin-top: 50px;
   }
 }
-
 
 /* =========================
    VERY SMALL PHONES
 ========================= */
 @media (max-width: 480px) {
 
-  nav {
-    padding: 10px 12px;
-  }
-
-  .logo {
-    font-size: 16px;
-  }
-
-  .nav-links li a {
-    font-size: 12px;
-  }
-
-  .textlogo {
-    margin-top: 25px;
-    padding: 0 16px;
-  }
-
   .textlogo h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .textlogo h3 {
-    font-size: 13px;
-  }
-
-  .girlsboys {
-    margin-top: 25px;
-    gap: 12px;
+    font-size: 14px;
+    margin-top: 55px;
   }
 
   .button,
   .Boys {
-    width: 94%;
-    height: 52px;
-    font-size: 18px;
-    font-weight: 700;
+    width: 220px;
+    text-align: center;
   }
 }
 
