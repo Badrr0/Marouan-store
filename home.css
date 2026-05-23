@@ -6,10 +6,13 @@ nav {
     width: 100%;
     backdrop-filter: blur(15px);
     display: flex;
-    justify-content: center;   /* 👈 هذا هو السر */
-    align-items: center;
+    justify-content: space-between;
     position: fixed;
-    padding: 15px 40px;
+
+    font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 header{
     position: fixed;
@@ -17,14 +20,13 @@ header{
     left: 0;
     z-index: 99999;
 }
-.nav-links {
+.nav-links{
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-right: 590px;
     gap: 2rem;
-    margin: 0;          /* ❌ remove margin-right */
-    padding: 0;
+    width: auto;
 }
 .nav-links li a {
     color: rgb(0, 0, 0);
@@ -317,12 +319,10 @@ nav i {
   }
 }
 /*end*/
-/* media Q*/
+
 
 
 /*media queries */
-
-  
 /* =========================
    RESPONSIVE – TABLETS
 ========================= */
