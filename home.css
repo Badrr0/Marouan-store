@@ -7,14 +7,12 @@ nav {
     backdrop-filter: blur(15px);
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: fixed;
-    padding: 15px 40px;
-    box-sizing: border-box;
 
     font-family: "Vend Sans", sans-serif;
-    font-weight: 700;
-    font-style: normal;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 header{
     position: fixed;
@@ -25,11 +23,10 @@ header{
 .nav-links{
     list-style: none;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin-right: 590px;
     gap: 2rem;
-    margin-right: 30px;
-    padding: 0;
-    flex-wrap: wrap;
+    width: auto;
 }
 .nav-links li a {
     color: rgb(0, 0, 0);
@@ -327,6 +324,7 @@ nav i {
 
 /*media queries */
 
+  
 /* =========================
    RESPONSIVE – TABLETS
 ========================= */
@@ -430,4 +428,3 @@ nav i {
     text-align: center;
   }
 }
-
