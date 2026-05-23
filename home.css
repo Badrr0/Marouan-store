@@ -323,109 +323,160 @@ nav i {
 }
 /*end*/
 
-/* =========================
-   PHONES
-========================= */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 16px;
-    gap: 0;
-  }
-  .logo-box {
-    justify-content: flex-start;
-  }
-  .nav-links {
-    justify-content: flex-end;
-    margin: 0;
-    gap: 0.8rem;
-    flex-wrap: nowrap;
-  }
-  .nav-links li a {
-    font-size: 14px;
-  }
-  .logo {
-    font-size: 18px;
-  }
-  nav i {
-    font-size: 22px;
-  }
 
-  /* Hero text block — full width, centered */
+
+@media (max-width: 1024px) {
+
   .textlogo {
-    margin-top: 40px;
+    margin-top: 140px;
     text-align: center;
     flex-direction: column;
     align-items: center;
     padding: 0 20px;
   }
+
   .textlogo h2 {
-    font-size: 30px;
+    font-size: 42px;
     line-height: 1.2;
   }
+
   .textlogo h3 {
-    font-size: 14px;
-    margin-top: 8px;
+    font-size: 16px;
+    margin-top: 12px;
   }
 
-  /* Hide 3D bottle on mobile */
+  .parfum3d img {
+    height: 260px;
+    top: 180px;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+
+  .girlsboys {
+    margin-top: 60px;
+  }
+}
+
+
+/* =========================
+   PHONES
+========================= */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    gap: 0.8rem;
+    flex-wrap: nowrap;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+  }
+
+  nav i {
+    font-size: 22px;
+  }
+
+  /* HERO */
+  .textlogo {
+    margin-top: 50px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .textlogo h2 {
+    font-size: 32px;
+  }
+
+  .textlogo h3 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  /* hide image */
   .parfum3d img {
     display: none;
   }
 
-  /* Buttons stacked, centered, full-width feel */
+  /* buttons */
   .girlsboys {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
-    gap: 14px;
-    width: 100%;
+    gap: 16px;
+    margin-top: 35px;
   }
- .button,
-.Boys {
-  width: 92%;
-  max-width: 380px;
-  height: 48px;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 10px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .button,
+  .Boys {
+    width: 92%;
+    max-width: 420px;
+    height: 56px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 0.5px;
+  }
 }
+
 
 /* =========================
    VERY SMALL PHONES
 ========================= */
 @media (max-width: 480px) {
+
   nav {
     padding: 10px 12px;
   }
+
   .logo {
     font-size: 16px;
   }
-  .nav-links {
-    gap: 0.6rem;
-  }
+
   .nav-links li a {
     font-size: 12px;
   }
+
   .textlogo {
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 0 16px;
   }
+
   .textlogo h2 {
     font-size: 26px;
   }
+
   .textlogo h3 {
     font-size: 13px;
-    margin-top: 6px;
   }
+
   .girlsboys {
-    margin-top: 24px;
+    margin-top: 25px;
+    gap: 12px;
+  }
+
+  .button,
+  .Boys {
+    width: 94%;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 700;
   }
 }
+
