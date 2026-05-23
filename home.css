@@ -384,14 +384,18 @@ nav i {
     gap: 14px;
     width: 100%;
   }
-  .button,
-  .Boys {
-    width: 85%;
-    max-width: 300px;
-    padding: 14px;
-    font-size: 15px;
-    text-align: center;
-  }
+ .button,
+.Boys {
+  width: 92%;
+  max-width: 380px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* =========================
@@ -423,11 +427,5 @@ nav i {
   }
   .girlsboys {
     margin-top: 24px;
-  }
-  .button,
-  .Boys {
-    width: 90%;
-    font-size: 14px;
-    padding: 12px;
   }
 }
