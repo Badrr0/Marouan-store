@@ -6,13 +6,10 @@ nav {
     width: 100%;
     backdrop-filter: blur(15px);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;   /* 👈 هذا هو السر */
+    align-items: center;
     position: fixed;
-
-    font-family: "Vend Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+    padding: 15px 40px;
 }
 header{
     position: fixed;
@@ -20,13 +17,14 @@ header{
     left: 0;
     z-index: 99999;
 }
-.nav-links{
+.nav-links {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-right: 590px;
+    align-items: center;
     gap: 2rem;
-    width: auto;
+    margin: 0;          /* ❌ remove margin-right */
+    padding: 0;
 }
 .nav-links li a {
     color: rgb(0, 0, 0);
