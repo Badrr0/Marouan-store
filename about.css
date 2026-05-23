@@ -179,18 +179,17 @@ nav i {
 }
 /*media queries */
 /* =========================
-   TABLETS (≤1024px)
-========================= */
-@media (max-width: 1024px) {
+  @media (max-width: 1024px) {
 
   .nav-links {
-    margin-right: 200px; /* keep navbar same style */
+    margin-right: 200px;
   }
 
   .textlogo {
     margin-top: 120px;
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 
   .textlogo h2 {
@@ -199,37 +198,20 @@ nav i {
 
   .textlogo h3 {
     font-size: 18px;
-    margin-top: 130px;
-    margin-right: 0;
-    text-align: center;
-    max-width: 700px;
+    margin-top: 20px; /* FIXED (was 130px ❌) */
+    position: static;  /* IMPORTANT */
   }
 
   .textlogo .weus {
-    margin-top: 210px;
+    margin-top: 20px;  /* FIXED */
+    position: static;
     font-size: 18px;
   }
 
   .textlogo .role {
-    margin-top: 270px;
+    margin-top: 20px;  /* FIXED */
+    position: static;
     font-size: 18px;
-    max-width: 700px;
-    text-align: center;
-  }
-
-  .whyus h1 {
-    font-size: 42px;
-    margin-top: 260px;
-  }
-
-  .diffe {
-    gap: 180px;
-    margin-top: 200px;
-    margin-left: 10px;
-  }
-
-  .context {
-    margin-bottom: 120px;
   }
 }
 
@@ -238,7 +220,6 @@ nav i {
 ========================= */
 @media (max-width: 768px) {
 
-  /* NAVBAR STRUCTURE UNCHANGED */
   .nav-links {
     margin-right: 20px;
     gap: 1.2rem;
@@ -251,61 +232,42 @@ nav i {
   nav i {
     font-size: 22px;
   }
-  .mission {
-    margin-bottom: 50px;
-  }
+
+  /* IMPORTANT FIX */
   .textlogo {
     margin-top: 100px;
     padding: 0 20px;
-  }
-
-  .textlogo h2 {
-    font-size: 34px;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  .textlogo h3 {
-    font-size: 16px;
-    margin-top: 110px;
+  .textlogo h2 {
+    font-size: 32px;
   }
 
-  .textlogo .weus {
-    margin-top: 180px;
-    font-size: 16px;
-  }
-
+  .textlogo h3,
+  .textlogo .weus,
   .textlogo .role {
-    margin-top: 250px;
-
+    position: static;   /* ❌ removes overlap problem */
+    margin-top: 12px;   /* clean spacing */
     font-size: 16px;
+    text-align: center;
   }
 
   .whyus h1 {
     font-size: 32px;
-    margin-top: 330px;
+    margin-top: 200px;
   }
 
   .diffe {
     flex-direction: column;
     align-items: center;
-    gap: 0;
+    gap: 20px;
+    margin-top: 200px;
     position: relative;
-    margin-top: 320px;
-    width: 100%;
-  }
-
-  .context {
-    margin-bottom: 80px;
-    text-align: center;
-  }
-
-  .context h2 {
-    position: relative;
-    width: 260px;
-    text-align: center;
   }
 }
-
 /* =========================
    SMALL PHONES (≤480px)
 ========================= */
@@ -315,27 +277,15 @@ nav i {
     font-size: 26px;
   }
 
-  .textlogo h3 {
-    font-size: 14px;
-    margin-top: 100px;
-  }
-
-  .textlogo .weus {
-    font-size: 14px;
-    margin-top: 165px;
-  }
-
+  .textlogo h3,
+  .textlogo .weus,
   .textlogo .role {
     font-size: 14px;
-    margin-top: 220px;
+    margin-top: 10px;
+    position: static;
   }
 
   .whyus h1 {
-    font-size: 26px;
-    margin-top: 220px;
-  }
-
-  .context h2 {
-    font-size: 14px;
+    font-size: 24px;
   }
 }
